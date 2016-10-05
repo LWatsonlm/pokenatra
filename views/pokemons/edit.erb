@@ -1,0 +1,18 @@
+<h2>Edit Your New Pokemon</h2>
+
+<form action="/pokemons/<%= @pokemon.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+
+  <label>Name</label>
+  <input type="text" name="pokemon[name]" value= "<%= @pokemon.name %>">
+  <label>CP</label>
+  <input type="text" name="pokemon[cp]" value= "<%= @pokemon.cp %>">
+  <p><label>Pokemon Type:</label></p>
+  <input type="text" name="pokemon[poke_type]" value="<%= @pokemon.poke_type %>">
+  <p><label>Image URL</label></p>
+  <input type="text" name="pokemon[img_url]" value= "<%= @pokemon.img_url %>">
+
+<button type="submit">Submit</button>
+</form>
+
+<h2><a href="/pokemons">Return Home</a></h2>
