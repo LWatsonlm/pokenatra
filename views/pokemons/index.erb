@@ -1,8 +1,11 @@
 <h2>All Pokemon</h2>
+<p><a href="/pokemons/new">Create New Pokemon</a></p>
 
-<ul>
+<table style="width:50%">
+  <tr>
 <% @pokemons.each do |pokemon| %>
-    <h2><a href="/pokemons/<%= pokemon.id %>"><%= pokemon.name %></a></h2>
-    <img src ="<%= pokemon.img_url %>"></a>
+    <th><h2><a href="/pokemons/<%= pokemon.id %>"><%= pokemon.name %></a></h2></th>
+    <th><img src ="<%= pokemon.img_url %>"></a></th>
+  </tr>
 <% end %>
-</ul>
+</table>
