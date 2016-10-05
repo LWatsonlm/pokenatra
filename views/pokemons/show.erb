@@ -1,12 +1,12 @@
 <h2>Here's Your Pokemon Stats</h2>
-<h2><a href="/pokemons">Back to Pokedex</a></h2>
+<h3><a href="/pokemons">Back to Pokedex</a></h3>
   <p>Pokemon's Name: <%= @pokemon.name %></p>
   <p>Pokemon's CP: <%= @pokemon.cp %></p>
   <p>Pokemon's Type: <%= @pokemon.poke_type %></p>
   <p>Pokemon's Picture:</p>
   <img src ="<%= @pokemon.img_url %>">
 
-  <h2><a href="/pokemons/<%= @pokemon.id %>/edit">Edit This Pokemon</a></h2>
+  <h3><a href="/pokemons/<%= @pokemon.id %>/edit">Edit This Pokemon</a></h3>
 
   <form action ="/pokemons/<%= @pokemon.id %>" method="post">
     <input type="hidden" name="_method" value="delete">
