@@ -23,6 +23,11 @@ body {
   font-size: 200%;
 }
 
+img {
+  height: 20%;
+  width: 20%;
+}
+
 a:hover {
   padding: 20px;
   animation: pulse 1s infinite;
