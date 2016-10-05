@@ -1,0 +1,25 @@
+<h2>Enter in Your New Pokemon</h2>
+
+<form action="/pokemons" method="post">
+  <label>Name</label>
+  <input type="text" name="pokemon[name]">
+
+  <label>CP</label>
+  <input type="text" name="pokemon[cp]">
+
+  <p><label>Pokemon Type:</label></p>
+  <input type="radio" name="pokemon[poke_type]" value="fire"> Fire<br>
+  <input type="radio" name="pokemon[poke_type]" value="lightning"> Lightning<br>
+  <input type="radio" name="pokemon[poke_type]" value="grass"> Grass<br>
+  <input type="radio" name="pokemon[poke_type]" value="water"> Water<br>
+  <input type="radio" name="pokemon[poke_type]" value="poison"> Poison<br>
+  <input type="radio" name="pokemon[poke_type]" value="ghost"> Ghost<br>
+  <input type="radio" name="pokemon[poke_type]" value="fairy"> Fairy<br>
+
+  <p><label>Image URL</label></p>
+  <input type="text" name="pokemon[img_url]">
+
+<button type="submit">Submit</button>
+</form>
+
+<h2><a href="/pokemons">Return Home</a></h2>
