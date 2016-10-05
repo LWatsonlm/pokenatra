@@ -21,6 +21,7 @@ body {
   font-family: "Pokemon", monospace;
   letter-spacing: .25em;
   font-size: 200%;
+  margin-left: 10%;
 }
 
 img {
